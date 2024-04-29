@@ -1,0 +1,28 @@
+.tiles-line {
+  display: flex;
+}
+
+.tiles--columns .tiles-line {
+  width: 25%;
+  padding: 0 1rem;
+  display: block;
+}
+
+.tiles--columns-rotated .tiles-line {
+  width: 320px;
+  flex: none;
+  padding: 0 1.5vw;
+  display: block;
+}
+
+.tiles--columns-rotated .tiles-line:nth-child(even) {
+  margin-top: -160px;
+}
+
+.tiles--oneline .tiles-line {
+  height: 100%;
+}
+
+.tiles--small .tiles-line {
+  height: 100%;
+}

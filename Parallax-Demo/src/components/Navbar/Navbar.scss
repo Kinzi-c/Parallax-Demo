@@ -1,0 +1,63 @@
+#a {
+  color: #333;
+}
+
+.navbar {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: "Syncopate", sans-serif;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar .visible {
+  top: 0;
+}
+
+.navbar .hidden {
+ display: none;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.image {
+  width: 40px;
+}
+
+.menu li {
+  display: inline;
+  margin: 20px;
+}
+#menu-item {
+  color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu-item:hover {
+  transform: scale(1.2);
+}
+
+.active {
+  font-weight: bold;
+}

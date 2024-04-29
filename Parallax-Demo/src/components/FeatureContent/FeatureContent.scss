@@ -1,0 +1,44 @@
+.content {
+  padding: 3rem;
+  min-height: 10vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.content--feature {
+  justify-content: flex-start;
+  min-height: 0;
+  max-height: 30vh;
+}
+
+.content-title {
+  font-size: 9vw;
+  line-height: 0.8;
+  margin: 0 0 3rem 0;
+  font-weight: 400;
+  max-width: 800px;
+  will-change: transform;
+}
+
+.content-breakout {
+  margin: 0 -3rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: span, serif;
+  font-weight: 200;
+  font-style: italic;
+  color: #211f1b;
+  padding: 0;
+}
+
+.content-breakout--big {
+  font-size: 13vw;
+  font-weight: 200;
+}
+
+.content-breakout--medium {
+  font-size: 5vw;
+}

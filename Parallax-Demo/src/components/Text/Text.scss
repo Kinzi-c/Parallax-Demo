@@ -1,0 +1,15 @@
+.text-container {
+  padding: 3rem;
+  min-height: 80vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.text-content {
+  font-size: 2.15rem;
+  font-size: clamp(1rem, 4vw, 2.15rem);
+}

@@ -1,0 +1,71 @@
+.tiles-line {
+  display: flex;
+}
+
+.tiles--columns .tiles-line {
+  width: 25%;
+  padding: 0 1rem;
+  display: block;
+}
+
+.tiles--columns-rotated .tiles-line {
+  width: 320px;
+  flex: none;
+  padding: 0 1.5vw;
+  display: block;
+}
+
+.tiles--columns-rotated .tiles-line:nth-child(even) {
+  margin-top: -160px;
+}
+
+.tiles--oneline .tiles-line {
+  height: 100%;
+}
+
+.tiles--small .tiles-line {
+  height: 100%;
+}
+.tiles-wrap {
+  width: 150%;
+  --tileswrap-height: var(--tiles-height);
+  height: var(--tileswrap-height);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.tiles--rotated .tiles-wrap {
+  --tileswrap-height: calc(var(--tiles-height) * 1.8);
+  transform: translate3d(-50%, -50%, 0) rotate(22.5deg);
+}
+
+.tiles--columns-rotated .tiles-wrap {
+  width: 150%;
+  display: flex;
+  transform: translate3d(-50%, -50%, 0) rotate(-22.5deg);
+  left: 50%;
+  top: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.tiles--columns .tiles-wrap {
+  width: 100%;
+  display: flex;
+  --tileswrap-height: calc(var(--tiles-height) * 1.4);
+  transform: translate3d(0, -50%, 0);
+  left: 0;
+  top: 50%;
+}
+
+.tiles--perspective .tiles-wrap {
+  width: 200%;
+  transform: translate3d(-50%, -50%, 0) translateX(-25%) translateZ(-1200px)
+    rotateX(75.5deg) rotateZ(12deg);
+}
+
+.tiles--fixed .tiles-wrap {
+  width: 100%;
+}
